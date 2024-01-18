@@ -1,8 +1,6 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import HomeItem from "./Components/HomeItem";
+import HomeItem from "../Components/HomeItem";
 
-function App() {
+const Home = () => {
   const item = {
     id: "002",
     image: "images/2.jpg",
@@ -18,18 +16,14 @@ function App() {
       count: 24,
     },
   };
-  
-  return (
-    <>
-      <Header />
-      <main>
-        <div className="items-container">
-          <HomeItem item={item} />
-        </div>
-      </main>
-      <Footer />
-    </>
-  );
-}
 
-export default App;
+  return (
+    <main>
+      <div className="items-container">
+        <HomeItem item={item} />
+      </div>
+    </main>
+  );
+};
+
+export default Home;
