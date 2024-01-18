@@ -6,7 +6,7 @@ const BagSummary = () => {
     finalPayment: 1346,
   };
   return (
-    <>
+    <div className="bag-summary">
       <div className="bag-details-container">
         <div className="price-header">
           PRICE DETAILS ({bagSummary.totalItem} Items){" "}
@@ -34,7 +34,7 @@ const BagSummary = () => {
       <button className="btn-place-order">
         <div className="css-xjhrni">PLACE ORDER</div>
       </button>
-    </>
+    </div>
   );
 };
 

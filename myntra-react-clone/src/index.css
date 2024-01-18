@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   box-sizing: border-box;
 }
 header {
@@ -29,7 +28,7 @@ header {
 }
 .nav_bar a {
   font-size: 14px;
-  letter-spacing: 0.3px;
+  letter-spacing: .3px;
   color: #282c3f;
   font-weight: 700;
   text-transform: uppercase;
@@ -95,15 +94,14 @@ header {
 .category_heading {
   text-transform: uppercase;
   color: #3e4152;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
   font-size: 1.8em;
   margin: 50px 0 10px 30px;
   max-height: 5em;
   font-weight: 700;
 }
 
-.category-items,
-.items-container {
+.category-items, .items-container {
   width: 80%;
   margin: 50px 10%;
   display: flex;
@@ -117,7 +115,7 @@ header {
 
 .footer_container {
   padding: 30px 0px 40px 0px;
-  background: #fafbfc;
+  background: #FAFBFC;
   display: flex;
   justify-content: space-evenly;
 }
@@ -239,9 +237,8 @@ header {
   text-decoration: none;
 }
 a.action_container:link {
-  color: black;
+  color:black;
 }
-
 .bag-items-container {
   display: inline-block;
   width: 64%;
@@ -360,7 +357,7 @@ a.action_container:link {
   margin-top: 5px;
   color: #282c3f;
   font-size: 12px;
-  letter-spacing: -0.1px;
+  letter-spacing: -.1px;
   margin-bottom: 8px;
   line-height: 15px;
 }
@@ -377,4 +374,8 @@ a.action_container:link {
   width: 14px;
   height: 14px;
   cursor: pointer;
+}
+
+.spinner {
+  margin: 100px 0px;
 }
