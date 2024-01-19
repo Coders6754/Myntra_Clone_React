@@ -1,26 +1,14 @@
 import HomeItem from "../Components/HomeItem";
+import { useSelector } from "react-redux";
 
 const Home = () => {
-  const item = {
-    id: "002",
-    image: "images/2.jpg",
-    company: "CUKOO",
-    item_name: "Women Padded Halter Neck Swimming Dress",
-    original_price: 2599,
-    current_price: 1507,
-    discount_percentage: 42,
-    return_period: 14,
-    delivery_date: "10 Oct 2023",
-    rating: {
-      stars: 4.3,
-      count: 24,
-    },
-  };
-
+  const items = useSelector((store) => store.items);
   return (
     <main>
       <div className="items-container">
-        <HomeItem item={item} />
+        {items.map((item) => (
+          <HomeItem key= {item.id}item={item} />
+        ))}
       </div>
     </main>
   );

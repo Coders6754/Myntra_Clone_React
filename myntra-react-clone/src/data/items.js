@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-const items = [
+export const DEFAULT_ITEMS = [
     {
         id: '001',
         image: 'images/1.jpg',
