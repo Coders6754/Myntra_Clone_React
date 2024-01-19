@@ -5,6 +5,7 @@ const BagSummary = () => {
     totalDiscount: 999,
     finalPayment: 1346,
   };
+  
   return (
     <div className="bag-summary">
       <div className="bag-details-container">
